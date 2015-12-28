@@ -9,9 +9,7 @@ var ORIENTATIONS = ["N", "E", "S", "W"]; // Object.keys(DIRECTIONS);
 
 var MarsRover = function (initialPositionAndOrientation) {
   var result = initialPositionAndOrientation.split("");
-  this.x = parseInt(result[0]);
-  this.y = parseInt(result[1]);
-  this.position = new Position(this.x, this.y);
+  this.position = new Position(parseInt(result[0]), parseInt(result[1]));
   this.orientation = result[2];
 };
 
